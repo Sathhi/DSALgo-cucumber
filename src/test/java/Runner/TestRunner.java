@@ -5,7 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="C:\\Users\\jayam\\eclipse-workspace\\DSAlgocucumber\\src\\test\\resources\\Features",
-glue= {"Step_Definitions","Hooks"},plugin= {"pretty","html:target/HTMLReports/HTMLReports.html"})
+glue= {"Step_Definitions","Hooks"},plugin= {"pretty","html:target/HTMLReports/HTMLReports.html","json:target/cucumber-reports/cucumber.json",})
 //json:target/JSONReports/report.json
 //create JSONReorts folder
 //JUNITReports folder asell and add report.xml in plugin
@@ -13,3 +13,4 @@ glue= {"Step_Definitions","Hooks"},plugin= {"pretty","html:target/HTMLReports/HT
 public class TestRunner {
 
 }
+//@CucumberOptions(publish = true) 
